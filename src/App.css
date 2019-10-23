@@ -3,20 +3,93 @@
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  pointer-events: none;
+  content: url(https://i.imgur.com/maRYCd0.png)
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url('/sunset.png');
+  min-height: 30vh;
+  font-size: 36px;
   color: white;
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #61dafb;
+}
+
+.header-text {
+    border: 5px solid #f58333;
+    border-image: linear-gradient(to right, rgb(94, 18, 18), #1e3142);
+    border-image-slice: 1;
+    color: goldenrod
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+hr {
+    color: goldenrod;
+}
+
+img {
+    max-height: 300px;
+    max-width: 300px;
+
+}
+
+nav {
+    background: linear-gradient( rgb(94, 18, 18), #1e3142) ;
+    color: goldenrod;
+    font-size: 24px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(145, 111, 24);
+
+
+}
+
+nav a:hover {
+    color: hotpink;
+}
+
+main {
+    margin: 0;
+    background-image: url('/sunset-water.png');
+    background-size: cover;
+    background-color: gray;
+    color: goldenrod;
+    padding: 8px 0;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
 }
